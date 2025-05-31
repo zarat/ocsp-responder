@@ -64,7 +64,7 @@ subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid:always,issuer
 basicConstraints = critical, CA:true
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
-authorityInfoAccess = OCSP;URI:http://zarat.cloudns.nz:8888
+authorityInfoAccess = OCSP;URI:http://localhost:8888
  
 [ crl_ext ]
 authorityKeyIdentifier = keyid:always
