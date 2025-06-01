@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Deine Server URI
-OCSP_SERVER_URI = http://localhost:8888
+OCSP_SERVER_URI=http://localhost:8888
  
 CA_DIR="$HOME/myCA"
  
