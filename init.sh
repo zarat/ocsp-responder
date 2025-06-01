@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Deine Server URI
+OCSP_SERVER_URI = http://localhost:8888
  
 CA_DIR="$HOME/myCA"
  
@@ -64,7 +67,7 @@ subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid:always,issuer
 basicConstraints = critical, CA:true
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
-authorityInfoAccess = OCSP;URI:http://localhost:8888
+authorityInfoAccess = OCSP;URI:$OCSP_SERVER_URI
  
 [ crl_ext ]
 authorityKeyIdentifier = keyid:always
